@@ -54,7 +54,16 @@ E.g. we have added "badword" into the dictionary.
 	
     $found = $trie->searchText("This string contains a bàdw..0-rrd");
     $found is true
- 
+
+ This means that the following all evaluate to the "house":
+
+    h0us3
+    h.o.u.s.e
+    h-o-u-s e
+    h.0.u.s 3
+    h,o,ù,s,3
+    hooou.s3
+
 ##How it works##
 Without using regular expression it creates a trie filled with words from one or more dictionaries. Every node is a letter and contains pointers to other nodes in an associative array.
 
