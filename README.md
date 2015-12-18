@@ -1,5 +1,5 @@
 # TrieWordsFilter
-This library is written to provide a useful tools to filter unwanted words from user input. Clearly, it could be useful in web application. It does not use regular expression because is intended to be used with a large dictionary and text to scan.
+This library is written to provide an useful tool to filter unwanted words from user input. Clearly, it could be useful in web application. It does not use regular expression because is intended to be used with a large dictionary and text to scan.
 
 ## Usage ##
 Firstly, we need to include all the classes and create the object.
