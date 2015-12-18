@@ -15,7 +15,7 @@ Or we can load a dictionary with:
 
     $trie->addFromFile($words)
 
-Few dictionary are included in data folder. There are de, en, es, fi, fr, it, no dictionary with bad words.
+Few dictionaries are included in data folder. There are de, en, es, fi, fr, it, no dictionary with bad words.
 
 We can show the trie:
 
@@ -56,7 +56,7 @@ E.g. we have added "badword" into the dictionary.
     $found is true
  
 ##How it works##
-Without using regular expression it creates a trie filled with words from one or more dictionary. Every node is a letter and contains pointers to other nodes in an associative array.
+Without using regular expression it creates a trie filled with words from one or more dictionaries. Every node is a letter and contains pointers to other nodes in an associative array.
 
 ##Performance##
 Some test files are given to test performance and timing. For testing the worst case text files do not contains any bad words.
