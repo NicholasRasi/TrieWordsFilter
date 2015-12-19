@@ -239,19 +239,10 @@ class Trie{
         if(isset($child))
             return $this->searchWord($text,$currentChar+1,$child);
         else{
-            //todo special chars
-            /*if($byte>1){
-                if(isset($text[$currentChar-($byte*2-1)]) && (strcmp(substr($text,$currentChar-($byte*2-1),$byte),substr($text,$currentChar-$byte+1,$byte))==0) && isset($text[$currentChar+1]))
-                    return $this->searchWord($text,$currentChar+1,$currentNode);
-                else
-                    return false;
-            }
-            else{*/
-                if(($byte==1 && isset($text[$currentChar-1]) && ($text[$currentChar]==$text[$currentChar-1]) && isset($text[$currentChar+1])) || ($byte>1 && isset($text[$currentChar-($byte*2-1)]) && (strcmp(substr($text,$currentChar-($byte*2-1),$byte),substr($text,$currentChar-$byte+1,$byte))==0) && isset($text[$currentChar+1])))
-                    return $this->searchWord($text,$currentChar+1,$currentNode);
-                else
-                    return false;
-            }
-        //}
+            if(($byte==1 && isset($text[$currentChar-1]) && ($text[$currentChar]==$text[$currentChar-1]) && isset($text[$currentChar+1])) || ($byte>1 && isset($text[$currentChar-($byte*2-1)]) && (strcmp(substr($text,$currentChar-($byte*2-1),$byte),substr($text,$currentChar-$byte+1,$byte))==0) && isset($text[$currentChar+1])))
+                return $this->searchWord($text,$currentChar+1,$currentNode);
+            else
+                return false;
+        }
     }
 }
