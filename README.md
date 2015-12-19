@@ -17,6 +17,9 @@ Or we can load a dictionary with:
 
 Few dictionaries are included in data folder. There are de, en, es, fi, fr, it, no dictionary with bad words.
 
+We ca load them with:
+    $trie->addFromFile(json_decode(file_get_contents(__DIR__ . '/../data/no/bad_words.json')))
+
 We can show the trie:
 
     $trie->show($trie->root)
