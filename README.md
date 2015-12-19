@@ -5,7 +5,7 @@ This library is written to provide an useful tool to filter unwanted words from 
 Firstly, we need to include all the classes and create the object.
 
     include(__DIR__ . '/../classes/Bootstrap.php');
-    $trie = new StringsTrie\Trie();
+    $trie = new TrieWordsFilter\Trie();
     
 Then we can add a single word into the dictionary with:
 
