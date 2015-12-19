@@ -17,9 +17,9 @@ Or we can load a dictionary with:
 
 Few dictionaries are included in data folder. There are de, en, es, fi, fr, it, no dictionary with bad words.
 
-We ca load them with:
+We ca load one of them with:
 
-    $trie->addFromFile(json_decode(file_get_contents(__DIR__ . '/../data/no/bad_words.json')));
+    $trie->addFromFile(json_decode(file_get_contents(__DIR__ . '/../data/en/bad_words.json')));
 
 We can show the trie:
 
@@ -73,4 +73,3 @@ Without using regular expression it creates a trie filled with words from one or
 
 ##Performance##
 Some test files are given to test performance and timing. For testing the worst case text files do not contains any bad words.
-
