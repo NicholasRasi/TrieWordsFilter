@@ -73,3 +73,5 @@ Without using regular expression it creates a trie filled with words from one or
 
 ##Performance##
 Some test files are given to test performance and timing. For testing the worst case text files do not contains any bad words.
+
+![enter image description here](http://i68.tinypic.com/x42iq9.jpg)
