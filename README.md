@@ -74,4 +74,4 @@ Without using regular expression it creates a trie filled with words from one or
 ##Performance##
 Some test files are given to test performance and timing. For testing the worst case text files do not contains any bad words.
 
-<img src="http://i65.tinypic.com/30w3w2f.jpg" width="200" height="200" />
+<img src="http://i66.tinypic.com/2pt9yef.jpg" width="200" height="200" />
