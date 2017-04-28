@@ -68,10 +68,10 @@ E.g. we have added "badword" into the dictionary.
     h,o,ù,s,3
     hooou.s3
 
-## How it works##
+## How it works
 Without using regular expression it creates a trie filled with words from one or more dictionaries. Every node is a letter and contains pointers to other nodes in an associative array.
 
-## Performance##
+## Performance
 Some test files are given to test performance and timing. For testing the worst case text files do not contains any bad words.
 
 <img src="http://i66.tinypic.com/2pt9yef.jpg" width="200" height="200" />
